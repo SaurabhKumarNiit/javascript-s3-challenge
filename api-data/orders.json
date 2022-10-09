@@ -2,23 +2,23 @@
   "orders": [
     {
       "id": 601,
-      "orderDate": "06-22-2022",
+      "orderDate": "12-31-2022",
       "items": [
         {
-          "itemName": "Berry Blast",
-          "price": 1.72
+          "itemName": "Momos",
+          "price": 40.72
         },
         {
-          "itemName": "Emilgrana & Mushroom Dip",
-          "price": 41.40
+          "itemName": "Samosa",
+          "price": 41.4
         }
       ],
       "customer": {
-        "name": "Mary",
-        "email": "mary@gmail.com",
-        "phoneNumber": "+11524449876",
+        "name": "Manish",
+        "email": "Manish@gmail.com",
+        "phoneNumber": "+91778899445566",
         "address": {
-          "streetName": "Scottsdale Kierland",
+          "streetName": "LandMark road",
           "streetNo": "100",
           "postalCode": "85254"
         }

@@ -1,5 +1,68 @@
 {
-    "paths": {
-        
+        "paths": {
+            "/menu": {
+                "get": {
+                    "summary": "",
+                    "description": "",
+                    "responses": {
+                        "200": {
+                            "description": "",
+                            "content-type": "",
+                            "type": "array",
+                            "items": {
+                                "menuId": "integer",
+                                "itemName": "string",
+                                "category": "string",
+                                "cuisine": "string",
+                                "price": "floating-point"
+                           
+                        }
+                       
+                    },
+                        "404": {
+                            "description": "",
+                            "content-type": "",
+                            "type": "string",
+                            "message": ""
+                       
+                    }
+                   
+                }
+               
+            }
+           
+        },
+        "/menu/{id}": {
+            "parameter": {
+                "id": {
+                    "type": "integer",
+                    "required": false
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content-type": "",
+                        "type": "array",
+                        "items": {
+                            "menuId": "integer",
+                            "itemName": "string",
+                            "category": "string",
+                            "cuisine": "string",
+                            "price": "floating-point"
+                        }
+                    },
+                    "404": {
+                        "description": "",
+                        "content-type": "",
+                        "type": "string",
+                        "message": ""
+                    }
+                }
+            }
+        }
     }
 }

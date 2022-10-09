@@ -2,13 +2,13 @@
   "customers": [
     {
       "id": 1,
-      "name": "David",
-      "email": "david@gmail.com",
-      "phoneNumber": "+11527896543",
+      "name": "Manish",
+      "email": "Manish@gmail.com",
+      "phoneNumber": "+919279894566",
       "address": {
-        "streetName": "Court Street",
-        "streetNo": "123",
-        "postalCode": "2617"
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "485001"
       }
     },
     {
@@ -53,6 +53,17 @@
         "streetName": "Buena Vista Drive",
         "streetNo": "A-498",
         "postalCode": "32830"
+      }
+    },
+    {
+      "id": 6,
+      "name": "User",
+      "email": "User@gmail.com",
+      "phoneNumber": "+919279894566",
+      "address": {
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "481001"
       }
     }
   ]

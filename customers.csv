@@ -1,11 +1,131 @@
 HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
-URL,,,,,,
-METHOD,,,,,,
+URL  http://localhost:3000/customers, http://localhost:3000/customers/1, http://localhost:3000/customers?name=Mary, 
+     http://localhost:3000/customers?email=Paul@gmail.com, http://localhost:3000/customers, http://localhost:3000/customers/1,
+METHOD GET,GET,GET,GET,POST,PUT,
 "Request Body 		",,,,,,
 "Content Type	",,,,,,
-Body ,,,,,,
+Body {
+    "id": 6,
+    "name": "User",
+    "email": "User@gmail.com",
+    "phoneNumber": "+919279894566",
+    "address": {
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "481001"
+    }
+}, {
+    "id": 1,
+    "name": "Manish",
+    "email": "Manish@gmail.com",
+    "phoneNumber": "+919279894566",
+    "address": {
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "485001"
+    }
+},,,,,
 ,,,,,,
-HTTP Response,,,,,,
-Status Code,,,,,,
-Status Message,,,,,,
-Body,,,,,,
+HTTP Response  GET /customers 200 42.985 ms - -, GET /customers/1 200 26.556 ms - 197, GET /customers?name=Mary 200 33.712 ms - 229, 
+                GET /customers?email=Paul@gmail.com 200 24.336 ms - 229,  POST /customers 201 25.143 ms - 202, PUT /customers/1 200 28.796 ms - 206,
+Status Code 200,200,200,200,201,200,
+Status Message OK,OK,OK,OK,OK,OK,
+Body [
+    {
+        "id": 1,
+        "name": "David",
+        "email": "david@gmail.com",
+        "phoneNumber": "+11527896543",
+        "address": {
+            "streetName": "Court Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+], [
+    {
+        "id": 2,
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    }
+], {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }, {
+    "id": 6,
+    "name": "User",
+    "email": "User@gmail.com",
+    "phoneNumber": "+919279894566",
+    "address": {
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "481001"
+    }
+}, {
+    "id": 1,
+    "name": "Manish",
+    "email": "Manish@gmail.com",
+    "phoneNumber": "+919279894566",
+    "address": {
+        "streetName": "Shiv-Complex",
+        "streetNo": "A-S7788",
+        "postalCode": "485001"
+    }
+},,
